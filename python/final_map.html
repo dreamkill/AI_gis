@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e612f526bcc9d0d4bfa4c6367cdf8f66 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e612f526bcc9d0d4bfa4c6367cdf8f66" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e612f526bcc9d0d4bfa4c6367cdf8f66 = L.map(
+                "map_e612f526bcc9d0d4bfa4c6367cdf8f66",
+                {
+                    center: [30.50399333333333, 114.40679],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5396fb5e8eceb6e89ae7eea6224c417e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5396fb5e8eceb6e89ae7eea6224c417e.addTo(map_e612f526bcc9d0d4bfa4c6367cdf8f66);
+        
+    
+            var marker_cluster_0f7f1546443fbd5378897f420826cefe = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f0d0982d33db476b0fda29892406a012 = L.marker(
+                [30.50618, 114.39707],
+                {
+}
+            ).addTo(marker_cluster_0f7f1546443fbd5378897f420826cefe);
+        
+    
+            var icon_7af7e20e55df1fc2cfc1916ffa136152 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8dcf3addf285e570370a28e3039f961 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfcb4fed4a7a26b0eb25f6d99712e983 = $(`<div id="html_cfcb4fed4a7a26b0eb25f6d99712e983" style="width: 100.0%; height: 100.0%;">武汉光谷广场</div>`)[0];
+                popup_d8dcf3addf285e570370a28e3039f961.setContent(html_cfcb4fed4a7a26b0eb25f6d99712e983);
+            
+        
+
+        marker_f0d0982d33db476b0fda29892406a012.bindPopup(popup_d8dcf3addf285e570370a28e3039f961)
+        ;
+
+        
+    
+    
+            marker_f0d0982d33db476b0fda29892406a012.bindTooltip(
+                `<div>
+                     武汉光谷广场
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0d0982d33db476b0fda29892406a012.setIcon(icon_7af7e20e55df1fc2cfc1916ffa136152);
+            
+    
+            var marker_62397d947f1f73e1766a51e1b576c718 = L.marker(
+                [30.5146, 114.4138],
+                {
+}
+            ).addTo(marker_cluster_0f7f1546443fbd5378897f420826cefe);
+        
+    
+            var icon_a9202b2fa3e0a32deefb57d903a497b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cda592c8ec35e8e7beb72045eb33d2f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a3c14148534eccadc7dd22664fcc6dc = $(`<div id="html_6a3c14148534eccadc7dd22664fcc6dc" style="width: 100.0%; height: 100.0%;">华中科技大学</div>`)[0];
+                popup_cda592c8ec35e8e7beb72045eb33d2f6.setContent(html_6a3c14148534eccadc7dd22664fcc6dc);
+            
+        
+
+        marker_62397d947f1f73e1766a51e1b576c718.bindPopup(popup_cda592c8ec35e8e7beb72045eb33d2f6)
+        ;
+
+        
+    
+    
+            marker_62397d947f1f73e1766a51e1b576c718.bindTooltip(
+                `<div>
+                     华中科技大学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62397d947f1f73e1766a51e1b576c718.setIcon(icon_a9202b2fa3e0a32deefb57d903a497b0);
+            
+    
+            var marker_048d13411795020fa733179e0fe5479f = L.marker(
+                [30.4912, 114.4095],
+                {
+}
+            ).addTo(marker_cluster_0f7f1546443fbd5378897f420826cefe);
+        
+    
+            var icon_a21c17d5c58f73ea8caebc8d9aef4776 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d6447a76d061c19e6518a8ea176afb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce31a010a477c01779469e515a655444 = $(`<div id="html_ce31a010a477c01779469e515a655444" style="width: 100.0%; height: 100.0%;">关山大道</div>`)[0];
+                popup_7d6447a76d061c19e6518a8ea176afb7.setContent(html_ce31a010a477c01779469e515a655444);
+            
+        
+
+        marker_048d13411795020fa733179e0fe5479f.bindPopup(popup_7d6447a76d061c19e6518a8ea176afb7)
+        ;
+
+        
+    
+    
+            marker_048d13411795020fa733179e0fe5479f.bindTooltip(
+                `<div>
+                     关山大道
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_048d13411795020fa733179e0fe5479f.setIcon(icon_a21c17d5c58f73ea8caebc8d9aef4776);
+            
+    
+            marker_cluster_0f7f1546443fbd5378897f420826cefe.addTo(map_e612f526bcc9d0d4bfa4c6367cdf8f66);
+        
+</script>
+</html>
